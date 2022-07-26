@@ -4,7 +4,7 @@ function lastIndexOf(elements, value) {
     if (elements[i] === value) {
       index = i;
     }
-  } 
+  }
   return index;
 }
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);

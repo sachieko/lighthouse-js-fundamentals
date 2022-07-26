@@ -6,14 +6,14 @@ const generateBoard = (whiteQ, blackQ) => {
   board[whiteQ[0]][whiteQ[1]] = 1;
   board[blackQ[0]][blackQ[1]] = 1;
   return board;
-}
+};
 const queenThreat = (board) => {
   let bool = false;
   //Rows
   let rowSum = 0;
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
-      rowSum += board[i][j]
+      rowSum += board[i][j];
     }
     if (rowSum > 1) {
       bool = true;
@@ -24,7 +24,7 @@ const queenThreat = (board) => {
   let colSum = 0;
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
-      colSum += board[j][i]
+      colSum += board[j][i];
     }
     if (colSum > 1) {
       bool = true;
@@ -62,7 +62,7 @@ const queenThreat = (board) => {
   }
   for (let i = 7; i >= 0; i--) {
     for (let j = 0; i + j <= 7; j++) {
-      diaSum += board[j][i +j];
+      diaSum += board[j][i + j];
     }
     if (diaSum > 1) {
       bool = true;
@@ -70,7 +70,7 @@ const queenThreat = (board) => {
     diaSum = 0;
   }
   return bool;
-}
+};
 let whiteQueen = [0, 0];
 let blackQueen = [5, 7];
 let generatedBoard = generateBoard(whiteQueen, blackQueen);

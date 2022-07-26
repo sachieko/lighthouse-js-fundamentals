@@ -1,14 +1,14 @@
-function range(start, end, step){
-  if (step <= 0){
+function range(start, end, step) {
+  if (step <= 0) {
     return [];
-  } else if (start > end){
+  } else if (start > end) {
     return [];
-  } else if (start === null || end === null || step === null){
+  } else if (start === null || end === null || step === null) {
     return [];
   } else {
     let rangearray = [];
     let number = start;
-    for (let i = 0; i <= Math.floor((end - start) / step); i++){ 
+    for (let i = 0; i <= Math.floor((end - start) / step); i++) {
       rangearray.push(number);
       number = number + step;
     }

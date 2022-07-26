@@ -3,7 +3,7 @@ const loopyLighthouse = function(range, multiple, words) {
   // multiple is an array of [multiple1, multiple2] to determine which numbers are replaced
   // words is an array of [word1, word2] to replace multiple1 and multiple2 respectively
   for (let number = range[0]; number <= range[1]; number++) {
-    // Defining conditions to save space. 
+    // Defining conditions to save space.
     let cond1 = number % multiple[0] === 0;
     let cond2 = number % multiple[1] === 0;
     // Starts running at range[0], and stops inclusively at range[i].

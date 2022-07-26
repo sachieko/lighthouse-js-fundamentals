@@ -17,6 +17,6 @@ const vegetables = [
     redness: 4,
     plumpness: 3
   }
-]
-const metric = "redness"
+];
+const metric = "redness";
 judgeVegetable(vegetables, metric);

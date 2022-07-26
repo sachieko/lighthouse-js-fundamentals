@@ -19,6 +19,6 @@ const cars = [
     time: 1568331115463,
     speed: 35
   }
-]
-const speed = 38
+];
+const speed = 38;
 console.log(carPassing(cars, speed));
