@@ -1,5 +1,5 @@
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
-function finalPosition(move) {
+const finalPosition = function(move) {
   let position = [0,0];
   for (let dir of move) {
     if (dir === 'north') {
@@ -13,5 +13,5 @@ function finalPosition(move) {
     }
   }
   return position;
-}
+};
 console.log(finalPosition(moves));

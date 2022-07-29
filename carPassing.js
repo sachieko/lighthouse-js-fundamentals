@@ -1,11 +1,11 @@
-function carPassing(cars, speed) {
+const carPassing = function(cars, speed) {
   let carUpdate = {
     time: Date.now(),
     speed: speed
   };
   cars.push(carUpdate);
   return cars;
-}
+};
 const cars = [
   {
     time: 1568329654807,

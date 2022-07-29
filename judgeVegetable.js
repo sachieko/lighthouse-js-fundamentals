@@ -1,6 +1,6 @@
-function judgeVegetable(veg, metric) {
+const judgeVegetable = function(veg, metric) {
   return veg.reduce((a, b) => a[metric] > b[metric] ? a : b).submitter;
-}
+};
 const vegetables = [
   {
     submitter: 'Old Man Franklin',

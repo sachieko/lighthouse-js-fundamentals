@@ -3,7 +3,7 @@ const stations = [
   ['Bright Lights Elementary', 50, 'school'],
   ['Moose Mountain Community Centre', 45, 'community centre']
 ];
-function chooseStations(stations) {
+const chooseStations = function(stations) {
   let stationArray = [];
   for (let [name, capacity, type] of stations) {
     if (capacity >= 20 && type === 'school') {
@@ -13,6 +13,6 @@ function chooseStations(stations) {
     }
   }
   return stationArray;
-}
+};
 
 console.log(chooseStations(stations));
