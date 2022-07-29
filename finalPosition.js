@@ -4,11 +4,14 @@ const finalPosition = function(move) {
   for (let dir of move) {
     if (dir === 'north') {
       position[1] = position[1] + 1;
-    } else if (dir === 'west') {
+    }
+    if (dir === 'west') {
       position[0] = position[0] - 1;
-    } else if (dir === 'south') {
+    }
+    if (dir === 'south') {
       position[1] = position[1] - 1;
-    } else if (dir === 'east') {
+    }
+    if (dir === 'east') {
       position[0] = position[0] + 1;
     }
   }

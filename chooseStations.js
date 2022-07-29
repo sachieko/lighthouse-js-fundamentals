@@ -8,7 +8,8 @@ const chooseStations = function(stations) {
   for (let [name, capacity, type] of stations) {
     if (capacity >= 20 && type === 'school') {
       stationArray.push(name);
-    } else if (capacity >= 20 && type === 'community centre') {
+    }
+    if (capacity >= 20 && type === 'community centre') {
       stationArray.push(name);
     }
   }
